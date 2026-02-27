@@ -272,3 +272,24 @@ h3 img {
     vertical-align: middle;
     margin-right: 8px;
 }
+
+@media (max-width: 500px) {
+    .hero {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    #map-container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 380px) {
+    .menu-items {
+        grid-template-columns: 1fr;
+    }
+
+    .about-us-content {
+        grid-template-columns: 1fr;
+    }
+}

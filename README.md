@@ -10,10 +10,11 @@ Throughout this project, I learned how to deploy a bundled page in **GitHub Page
 ## Tech used
 - HTML5, CSS3, JavaScript
 - npm, Webpack
+- bash (to create a script that deploys the application)
 
 ## How To Run Locally
 1. Clone the repository: `git clone https://github.com/AlinC10/Restaurant-Page.git`
 2. Open the terminal
 3. Go to the project directory
 4. Run `npm install` to install all the dependencies
-5. Run `npx webpack` and `npx webpack serve` to launch a local server. Go to `http://localhost:8080/` in your favorite browser.
+5. Run `npm run dev` to launch a local development server (for more scripts check the packages.json). Go to `http://localhost:8080/` in your favorite browser.

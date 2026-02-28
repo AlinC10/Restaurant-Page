@@ -6,7 +6,7 @@ set -e
 echo "Start deploy"
 
 # Change branch and sync changes from main to gh-pages
-git chechout gh-pages
+git checkout gh-pages
 git merge main --no-edit
 
 # Bundle production application into dist

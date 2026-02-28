@@ -13,7 +13,7 @@ git merge main --no-edit
 npm run build
 
 # Force add dist (compiled files) commit stage and commit changes 
-gid add dist -f
+git add dist -f
 git commit
 
 # Push to GitHub gh-pages branch only the dist directory as the root

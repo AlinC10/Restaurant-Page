@@ -3,20 +3,18 @@ import { home } from "./home.js";
 import { menu } from "./menu.js";
 import { about } from "./about.js";
 
+const page = {
+    home: () => {
+        home.togglePage();
+        const btn = document.querySelector(".hero-text-container button");
+        btn.addEventListener("click", changePageBtnEvent);
+    },
+    menu: () => menu.togglePage(),
+    about: () => about.togglePage()
+};
+
 function showPage(pageName) {
-    switch (pageName) {
-        case "home":
-            home.togglePage();
-            const btn = document.querySelector(".hero-text-container button");
-            btn.addEventListener("click", changePageBtnEvent);
-            break;
-        case "menu":
-            menu.togglePage();
-            break;
-        case "about":
-            about.togglePage();
-            break;
-    }
+    page[pageName]();
 }
 
 function removeActiveClassFromBtn(navButtons) {
